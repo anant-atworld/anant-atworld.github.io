@@ -6,10 +6,10 @@
 <title>AtWorld</title>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a1f44;--card:#0f2b5b;--tx:#eaf4ff;--mu:#9cc3e6;--ac:#4da3ff;--ac2:#22e3ff;--sky:#87ceeb;--yel:#ffd60a;--ok:#3ddc84;--wa:#ffb04a;--bd:#1f4380;--in:#081a3a;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--bg:#070b12;--card:#0d1622;--tx:#eaf4ff;--mu:#8fb3c9;--ac:#4da3ff;--ac2:#22e3ff;--sky:#87ceeb;--yel:#ffd60a;--ok:#3ddc84;--wa:#ffb04a;--bd:rgba(34,227,255,.34);--in:#08111b;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
-body{margin:0;background:radial-gradient(1000px 420px at 50% -120px,rgba(34,227,255,.32),transparent),var(--bg);color:var(--tx);font-family:Sora,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+body{margin:0;background:radial-gradient(700px 380px at 12% -80px,rgba(34,227,255,.28),transparent),radial-gradient(650px 420px at 95% 60%,rgba(59,91,255,.24),transparent),radial-gradient(circle,rgba(135,206,235,.12) 1px,transparent 1.4px) 0 0/24px 24px,var(--bg);color:var(--tx);font-family:Sora,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
 main{max-width:820px;margin:0;padding:20px 16px 48px;text-align:left}
 h1{font-size:clamp(2.6rem,11vw,4.4rem);font-weight:800;letter-spacing:-.04em;line-height:1.1;margin:8px 0 6px;padding-bottom:.05em;background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
 h2{font-size:1.15rem;margin:34px 0 12px;font-weight:600;color:var(--sky)}
@@ -51,22 +51,33 @@ button.g{background:transparent;color:var(--mu);padding:4px 8px}
 .empty{color:var(--mu);font-size:.9rem;padding:6px 0}
 small.note{display:block;color:var(--mu);margin-top:26px;font-size:.78rem}
 @media (prefers-reduced-motion:no-preference){.bar div{transition:height .3s}}
-html{overflow-y:scroll;scrollbar-color:#22e3ff #081a3a}
+html{overflow-y:scroll;scrollbar-color:#22e3ff #08111b}
 ::-webkit-scrollbar{width:12px;height:12px}
-::-webkit-scrollbar-track{background:#081a3a}
-::-webkit-scrollbar-thumb{background:linear-gradient(#22e3ff,#0a62e8);border-radius:8px;border:2px solid #081a3a}
-.wel{font-size:clamp(3.2rem,15vw,6rem);font-weight:800;text-align:center;color:var(--yel);margin:6px 0 2px;letter-spacing:-.03em;line-height:1.05;text-shadow:0 0 30px rgba(255,214,10,.35)}
+::-webkit-scrollbar-track{background:#08111b}
+::-webkit-scrollbar-thumb{background:linear-gradient(#22e3ff,#0a62e8);border-radius:8px;border:2px solid #08111b}
+.wel{font-size:clamp(2.2rem,9vw,4.4rem);font-weight:800;text-align:center;color:var(--yel);margin:6px 0 2px;letter-spacing:-.03em;line-height:1.05;text-shadow:0 0 30px rgba(255,214,10,.35)}
 .gsub{color:var(--sky);font-size:.88rem;margin:-6px 0 10px}
 .at{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:12px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#0a62e8,#22e3ff);color:#fff;font-weight:800;font-size:.8rem;z-index:5;box-shadow:0 0 16px rgba(34,227,255,.5)}
 .tm{font-size:3.2rem;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--ac2);line-height:1.1}
 .lib{max-height:260px;overflow-y:auto;margin-top:10px;padding-right:6px}
 .bk{padding:9px 0;border-top:1px solid var(--bd)}
+body{background-attachment:fixed}
+.card,.box,.grp{border:1.5px solid var(--bd);box-shadow:0 0 18px rgba(34,227,255,.10),inset 0 0 0 1px rgba(255,255,255,.03)}
+.grp{border-left:6px solid var(--c)}
+.plan div{border:1px solid var(--bd)}
+input[type=text],input[type=date],input[type=number]{border:1.5px solid rgba(34,227,255,.38)}
+button{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.2),0 0 14px rgba(34,227,255,.25)}
+button.g,.chip{box-shadow:none}
+h2{border-left:4px solid var(--ac2);padding-left:10px}
+.wel{-webkit-text-stroke:1px rgba(255,150,0,.6)}
+.wel::after{content:"";display:block;width:140px;height:3px;margin:12px auto 0;border-radius:3px;background:linear-gradient(90deg,#ffd60a,#22e3ff)}
+.at{border:2px solid rgba(255,255,255,.55)}
 </style>
 </head>
 <body>
 <div class="at" aria-hidden="true">AT</div>
 <main>
-<div class="wel">Welcome</div>
+<div class="wel">Welcome to Anant’s World</div>
 <h1>AtWorld</h1>
 <p class="sub">Anant’s daily system for NEET 2028: habits, revision, and the five things that make up his world.</p>
 <div class="top">
